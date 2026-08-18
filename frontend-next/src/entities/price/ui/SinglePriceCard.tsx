@@ -1,6 +1,6 @@
-import { SinglePriceItem } from "../model/types";
+import { SinglePriceItem } from '../model/types';
 
-type Props = { item: SinglePriceItem}
+type Props = { item: SinglePriceItem };
 
 export const SinglePriceCard = ({ item }: Props) => {
     return (
@@ -9,4 +9,4 @@ export const SinglePriceCard = ({ item }: Props) => {
             <p className="mt-2 text-2xl font-bold text-gray-900">{item.price}</p>
         </article>
     );
-}
+};

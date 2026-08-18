@@ -1,5 +1,3 @@
 export const SignUpClass = () => {
-    return (
-        <button></button>
-    );
+    return <button></button>;
 };

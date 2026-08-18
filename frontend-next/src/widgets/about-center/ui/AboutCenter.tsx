@@ -1,43 +1,47 @@
-import {SectionWrapper} from "@/shared/ui/Wrapper";
-import {PageTitle} from "@/shared/ui/PageTitle";
+import { HeartPulse, ShieldCheck, Sparkles } from 'lucide-react';
+
+import { PageTitle } from '@/shared/ui/PageTitle';
+import { SectionWrapper } from '@/shared/ui/Wrapper';
+
 const advantages = [
     {
         title: 'Комфорт',
+        icon: Sparkles,
     },
     {
         title: 'Квалификация инструкторов',
+        icon: ShieldCheck,
     },
     {
         title: 'Укрепление здоровья',
+        icon: HeartPulse,
     },
 ];
 
 export const AboutCenter = () => {
     return (
-        <div className="mx-auto w-full bg-white px-4 py-8 sm:px-8">
+        <SectionWrapper>
             <PageTitle title="Почему именно Студия йоги «Гармония движения»" />
 
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-                {advantages.map(({ title }) => (
-                    <div
-                        key={title}
-                        className="
-                        w-full max-w-[250px]
-                        rounded-xl
-                        bg-white
-                        p-6
-                        text-center
-                    "
-                    >
+            <ol className="mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+                {advantages.map(({ title, icon: Icon }, index) => {
+                    return (
+                        <li key={title} className="relative">
+                            <article className="relative h-full rounded-xl border border-neutral-300 bg-white px-5 py-6 text-center shadow-sm">
+                                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gray-100 text-[#7654A8]">
+                                    <Icon className="h6 w-6" />
+                                </div>
 
-                        <h3 className="mt-3 text-lg font-semibold text-[#9370DB]">
-                            {title}
-                        </h3>
-                    </div>
-                ))}
-            </div>
+                                <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
 
-            <div className="my-6 h-px w-full bg-[#9370DB]" />
-        </div>
+                                <p className="text-sm leading-relaxed text-gray-600">
+                                    {index + 1} из {advantages.length}
+                                </p>
+                            </article>
+                        </li>
+                    );
+                })}
+            </ol>
+        </SectionWrapper>
     );
-}
+};

@@ -1,7 +1,7 @@
-import {Schedule} from "./types";
+import { Schedule } from './types';
 
 export const schedule: Schedule = {
-    "Вторник": [
+    Вторник: [
         {
             time: '7:00-8:45',
             type: 'Йога в гамаках для продолжающих',
@@ -19,7 +19,7 @@ export const schedule: Schedule = {
             type: 'Йога в гамаках для начинающих и продолжающих',
         },
     ],
-    "Четверг": [
+    Четверг: [
         {
             time: '7:00-8:45',
             type: 'Хатха-йога для продолжающих',
@@ -37,7 +37,7 @@ export const schedule: Schedule = {
             type: 'Хатха-йога для начинающих и продолжающих',
         },
     ],
-    "Суббота": [
+    Суббота: [
         {
             time: '7:15-8:45',
             type: 'Хатха-йога для продолжающих',

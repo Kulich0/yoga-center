@@ -1,8 +1,4 @@
-export const weekDays = [
-    'Вторник',
-    'Четверг',
-    'Суббота',
-] as const;
+export const weekDays = ['Вторник', 'Четверг', 'Суббота'] as const;
 
 export type WeekDay = (typeof weekDays)[number];
 
@@ -11,4 +7,4 @@ export interface ScheduleItem {
     type: string;
 }
 
-export type Schedule = Record<WeekDay, ScheduleItem[]>
+export type Schedule = Record<WeekDay, ScheduleItem[]>;

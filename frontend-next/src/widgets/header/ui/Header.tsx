@@ -1,14 +1,12 @@
-import Link from "next/link";
-import { navItems } from "@/shared/config/navigation";
-import Image from 'next/image';
+import Link from 'next/link';
 
-import Logo from '@/shared/ui/assets/icons/Logo.webp'
+import { navItems } from '@/shared/config/navigation';
 
 export const Header = () => {
     return (
         <header className="sticky top-0 bg-[#9370DB] shadow-sm">
             <nav className="flex flex-row justify-center py-3">
-                    {/*<Image
+                {/*<Image
                         src={Logo}
                         alt="Гармония движения"
                         width={50}
@@ -28,4 +26,4 @@ export const Header = () => {
             </nav>
         </header>
     );
-}
+};

@@ -1,12 +1,12 @@
-import { PageShell } from "@/widgets/layout";
-import { AboutCenter } from "@/widgets/about-center";
-import {HeroSection} from "@/widgets/hero-section";
-import {ContactsSection} from "@/widgets/contacts";
+import { AboutCenter } from '@/widgets/about-center';
+import { ContactsSection } from '@/widgets/contacts';
+import { HeroSection } from '@/widgets/hero-section';
+import { PageShell } from '@/widgets/layout';
 
 export default function HomePage() {
     return (
         <PageShell>
-            {/*<HeroSection />*/}
+            <HeroSection />
             <AboutCenter />
             <ContactsSection />
         </PageShell>

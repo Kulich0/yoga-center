@@ -1,6 +1,6 @@
-import {PageTitle} from "@/shared/ui/PageTitle";
-import {SectionWrapper} from "@/shared/ui/Wrapper";
-import {ScheduleDay, weekDays, schedule} from "@/entities/schedule";
+import { schedule, ScheduleDay, weekDays } from '@/entities/schedule';
+import { PageTitle } from '@/shared/ui/PageTitle';
+import { SectionWrapper } from '@/shared/ui/Wrapper';
 
 export const ScheduleSection = () => {
     return (

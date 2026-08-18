@@ -1,5 +1,5 @@
-import { PageShell } from "@/widgets/layout";
-import { ActivitiesSection } from "@/widgets/activities-section";
+import { ActivitiesSection } from '@/widgets/activities-section';
+import { PageShell } from '@/widgets/layout';
 
 export default function ClassesPage() {
     return (

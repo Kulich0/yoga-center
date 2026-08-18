@@ -1,9 +1,9 @@
-import { SinglePriceItem, SubscriptionItem } from "./types";
+import { SinglePriceItem, SubscriptionItem } from './types';
 
 export const singlePrices: SinglePriceItem[] = [
-    { id: "trial", label: "Пробное занятие", price: "300 ₽" },
-    { id: "single", label: "Разовое занятие", price: "600 ₽" },
-    { id: "personal", label: "Индивидуальная тренировка", price: "1 200 ₽" },
+    { id: 'trial', label: 'Пробное занятие', price: '300 ₽' },
+    { id: 'single', label: 'Разовое занятие', price: '600 ₽' },
+    { id: 'personal', label: 'Индивидуальная тренировка', price: '1 200 ₽' },
 ];
 
 export const subscriptions: SubscriptionItem[] = [
